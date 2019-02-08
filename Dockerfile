@@ -6,7 +6,8 @@ RUN apk add --no-cache \
   g++ \
   python3 \
   vim \
-  curl
+  curl \
+  tree
 
 # alias
 RUN \
