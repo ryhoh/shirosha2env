@@ -1,0 +1,8 @@
+#!/bin/bash
+case `uname` in
+  "Darwin" )
+    docker run -w `pwd` -v /Users:/Users -it myenv /bin/bash ;;
+  "Linux" )
+    docker run -w `pwd` -v /home/tetsuya:/home/tetsuya -it myenv /bin/bash ;;
+  * ) echo "unknown os error occured." ;;
+esac
